@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #left{
+    background-color: #FFE4C4;
+    padding: 10px;
+    flex: 25%;
+  }
+  #right{
+    background-color: #AFEEEE;
+    padding: 10px;
+    flex: 75%;
+  }
+  #picture
+  {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  #textAndLinks
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    font-size: 15px;
+  }
+
+  #textAndLinks > p {
+    margin: 0px;
+  }
+
+  
+  p {
+    text-align: left;
+    margin: 15px
+  }

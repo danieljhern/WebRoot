@@ -8,23 +8,23 @@ body {
     text-align: center;
   }
   
-  #left{
+#left{
     background-color: #FFE4C4;
     padding: 10px;
     flex: 25%;
   }
-  #right{
+#right{
     background-color: #AFEEEE;
     padding: 10px;
     flex: 75%;
   }
-  #picture
+#picture
   {
     display: flex;
     justify-content: flex-start;
   }
   
-  #textAndLinks
+#textAndLinks
   {
     display: flex;
     flex-direction: column;
@@ -32,12 +32,39 @@ body {
     font-size: 15px;
   }
 
-  #textAndLinks > p {
+#textAndLinks > p {
     margin: 0px;
   }
 
   
-  p {
+p {
     text-align: left;
     margin: 15px
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+.grid-left {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+.grid-right {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+#col-1 {
+    grid-column: 1 / span 4;
+    background-color: #FFE4C4;
+  }
+
+#col-2 {
+    grid-column: 5 / span 8;
+    background-color: #AFEEEE;
   }

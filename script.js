@@ -20,3 +20,5 @@ shareButton.addEventListener('click', event => {
 closeButton.addEventListener('click', event => {
       shareDialog.classList.remove('is-open');
     });
+
+    if ('geolocation' in navigator) (navigator.geolocation.getCurrentPosition(console.log));
